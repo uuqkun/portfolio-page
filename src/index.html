@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <main class="container-fluid px-0">
+        <!-- NAVBAR -->
+        <nav class=" nav justify-content-around align-items-center py-3 position-fixed bg-white">
+            <header class="nav-icon nav-item">
+                <h2 class="font-noto fst-italic fw-bold">Shutter</h2>
+            </header>
+            <ul class="nav nav-item flex-row">
+                <a href="#about-me" class="nav-item nav-link text-dark">About me</a>
+                <a href="#portfolio" class="nav-item nav-link text-dark">Portfolio</a>
+                <a href="#contact" class="nav-item nav-link text-dark">Contact</a>
+                <a href="#subscribe" class="nav-item nav-link text-dark">Subscribe</a>
+            </ul>
+        </nav>
+        <!-- HERO IMAGE -->
+        <header class="header-image w-100 vh-100 overflow-hidden">
+            <img src="https://img.freepik.com/free-photo/ebautiful-scenery-high-rocky-cliffs-fir-tree-forest-overed-with-snow-dolomites_181624-45855.jpg?w=1380&t=st=1671806152~exp=1671806752~hmac=8c0c7147f7febcc6f462ea42d369b22a7f20ab2430db13022402ea2851d274d1"
+                alt="mountain" class="hero-image w-100">
+            <section class="hero-caption position-absolute bottom-0 d-flex flex-column justify-content-evenly">
+                <p class="text-uppercase letter-spacing-wide">landscape</p>
+                <h1 class="hero-title text-capitalize fw-bold font-noto fst-italic">the lonely mountain</h1>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci hic repellendus
+                    reprehenderit blanditiis non? Perspiciatis natus facilis sint quasi ipsa, similique mollitia sed
+                    possimus. Dignissimos pariatur cupiditate praesentium quam nostrum est maxime, ipsam omnis, adipisci
+                    ullam, in voluptate unde neque.</p>
+            </section>
+        </header>
+        <!-- ABOUT ME -->
+        <section id="about-me" class="about-me position-relative vw-100 vh-100 d-flex justify-content-center">
+            <div class="large-text position-absolute text-center">
+                <p class="bg-text font-noto fst-italic">About me</p>
+            </div>
+            <div class="profile-card card h-25 align-self-start position-relative" style="width: 400px;">
+                <img src="https://img.freepik.com/free-photo/young-asian-man-with-camera-isolated-white-background-photographer-concept_231208-3767.jpg?w=1380&t=st=1671809455~exp=1671810055~hmac=bbee6ffa8c4eb6466ecd31805c816ad3403c895e4ff70f4c78fce8e636999fea"
+                    class="shadow-lg" alt="profile">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-uppercase letter-spacing-wide my-4">Achmad Furqon R.</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt et, quaerat a
+                        illo optio dolores cum error, nisi harum aliquid ipsa ex itaque debitis quidem libero excepturi
+                        cupiditate perferendis? Minima.</p>
+                </div>
+            </div>
+        </section>
+        <!-- RECENT WORKS -->
+        <section id="portfolio"
+            class="recent-works position-relative vw-100 min-vh-100 d-flex flex-column align-items-center justify-content-center">
+            <section class="works-text w-50 text-center">
+                <p class="text-uppercase letter-spacing-wide">portfolio</p>
+                <h1 class="font-noto fst-italic my-4">My recent works</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus excepturi nesciunt, fugit quasiest
+                    voluptates, dolorum odio, a reiciendis vitae cumque. Quasi praesentium et fugiat recusandae
+                    consequuntur, animi delectus. Voluptatum quaerat iste dolore nisi porro quas odit. Quidem, vitae ad?
+                </p>
+            </section>
+            <section class="works navigate">
+                <ul class="nav nav-tabs">
+                    <li class="nav-items nav-link text-uppercase mx-lg-5 active">landscape</li>
+                    <li class="nav-items nav-link text-uppercase mx-lg-5">Portrait</li>
+                    <li class="nav-items nav-link text-uppercase mx-lg-5">wedding</li>
+                    <li class="nav-items nav-link text-uppercase mx-lg-5">product</li>
+                </ul>
+            </section>
+            <section class="works-images m-0 p-0 d-flex flex-wrap w-100 align-items-center">
+                <img src="https://img.freepik.com/free-photo/row-yellow-ginkgo-tree-autumn-autumn-park-tokyo-japan_335224-29.jpg?w=1380&t=st=1671815592~exp=1671816192~hmac=134e89fdc55b9a4b3bba0b8dcc4637265f4a833e897d0b7a1fd0d38cbd8d2387"
+                    alt="works images">
+                <img src="https://img.freepik.com/free-photo/clouds-sky_53876-33576.jpg?w=1380&t=st=1671815537~exp=1671816137~hmac=ee0d93aba6d334b303860cf4ded69c0a39ba8f4d211d69fd785b8a50dd25875b"
+                    alt="works images">
+                <img src="https://img.freepik.com/free-photo/beautiful-shot-snowy-hill-surrounded-by-mountains-with-light-pink-sky_181624-4102.jpg?w=1380&t=st=1671817596~exp=1671818196~hmac=a082da0d1d724d447af819033c0511b2d60602aa296c2aa729de00a4223d7d6f"
+                    alt="works images">
+                <img src="https://img.freepik.com/free-photo/high-angle-shot-beautiful-forest-with-lot-green-trees-enveloped-fog-new-zealand_181624-19717.jpg?w=1380&t=st=1671815424~exp=1671816024~hmac=e3aa38d5c066f7289a7e32ee3c4947687b6d3103d421f8ecabaa6794a7a4c8a1"
+                    alt="works images">
+                <img src="https://img.freepik.com/free-photo/sunset_1127-3505.jpg?t=st=1671816161~exp=1671816761~hmac=9fade5645c1e7d4ce21d66a47aac72f1e002478fa2098823b2a2e2f6e3cbcbe3"
+                    alt="works images">
+                <img src="https://img.freepik.com/free-photo/grove-summer_1398-333.jpg?t=st=1671816143~exp=1671816743~hmac=ad489d981b167843c51636b6ef8d968c2b87ec900d9cfb0b1977e55a1ba79aee"
+                    alt="works images">
+            </section>
+        </section>
+        <form name="contact-form" class="vw-100 vh-100 d-flex flex-column align-items-center justify-content-center" id="contact">
+
+            <h1 class="font-noto text-center fst-italic">Contact me</h1>
+            <div class="input-field w-50">
+                <div class="row mb-3">
+                    <label for="inputFullname" class="col-sm-2 col-form-label">Full Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputFullname" placeholder="Full name" name="name">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputMessage" class="col-sm-2 col-form-label">Message</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" rows="5" id="inputMessage" placeholder="Type message..." name="message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-2">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <footer></footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
