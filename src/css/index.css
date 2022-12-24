@@ -205,7 +205,8 @@ form .input-field {
     margin: 3rem 0;
 }
 
-form input::placeholder { 
+form input::placeholder, 
+form textarea::placeholder { 
     font-size: 10px;
     opacity: .8;
 }
