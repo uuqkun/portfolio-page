@@ -16,11 +16,11 @@
 <body>
     <main class="container-fluid px-0">
         <!-- NAVBAR -->
-        <nav class=" nav justify-content-around align-items-center py-3 position-fixed bg-white">
+        <nav class=" nav vw-100 d-flex justify-content-around align-items-center py-3 position-fixed bg-white">
             <header class="nav-icon nav-item">
                 <h2 class="font-noto fst-italic fw-bold">Shutter</h2>
             </header>
-            <ul class="nav nav-item flex-row">
+            <ul class="nav nav-item d-none  d-md-flex flex-column flex-md-row">
                 <a href="#about-me" class="nav-item nav-link text-dark">About me</a>
                 <a href="#portfolio" class="nav-item nav-link text-dark">Portfolio</a>
                 <a href="#contact" class="nav-item nav-link text-dark">Contact</a>
@@ -28,13 +28,15 @@
             </ul>
         </nav>
         <!-- HERO IMAGE -->
-        <header class="header-image w-100 vh-100 overflow-hidden">
-            <img src="https://img.freepik.com/free-photo/ebautiful-scenery-high-rocky-cliffs-fir-tree-forest-overed-with-snow-dolomites_181624-45855.jpg?w=1380&t=st=1671806152~exp=1671806752~hmac=8c0c7147f7febcc6f462ea42d369b22a7f20ab2430db13022402ea2851d274d1"
-                alt="mountain" class="hero-image w-100">
-            <section class="hero-caption position-absolute bottom-0 d-flex flex-column justify-content-evenly">
+        <header class="header-image vw-100 vh-100 overflow-hidden">
+            <div class="hero-image w-100 h-100 bg-danger">
+                <img src="https://img.freepik.com/free-photo/ebautiful-scenery-high-rocky-cliffs-fir-tree-forest-overed-with-snow-dolomites_181624-45855.jpg?w=1380&t=st=1671806152~exp=1671806752~hmac=8c0c7147f7febcc6f462ea42d369b22a7f20ab2430db13022402ea2851d274d1"
+                    alt="mountain">
+            </div>
+            <section class="hero-caption position-absolute d-flex flex-column justify-content-evenly text-center text-md-start p-3">
                 <p class="text-uppercase letter-spacing-wide">landscape</p>
                 <h1 class="hero-title text-capitalize fw-bold font-noto fst-italic">the lonely mountain</h1>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci hic repellendus
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci hic repellendus
                     reprehenderit blanditiis non? Perspiciatis natus facilis sint quasi ipsa, similique mollitia sed
                     possimus. Dignissimos pariatur cupiditate praesentium quam nostrum est maxime, ipsam omnis, adipisci
                     ullam, in voluptate unde neque.</p>
@@ -45,7 +47,7 @@
             <div class="large-text position-absolute text-center">
                 <p class="bg-text font-noto fst-italic">About me</p>
             </div>
-            <div class="profile-card card h-25 align-self-start position-relative" style="width: 400px;">
+            <div class="profile-card card border-0 w-75 h-auto align-self-start position-relative">
                 <img src="https://img.freepik.com/free-photo/young-asian-man-with-camera-isolated-white-background-photographer-concept_231208-3767.jpg?w=1380&t=st=1671809455~exp=1671810055~hmac=bbee6ffa8c4eb6466ecd31805c816ad3403c895e4ff70f4c78fce8e636999fea"
                     class="shadow-lg" alt="profile">
                 <div class="card-body text-center">
@@ -90,10 +92,18 @@
                     alt="works images">
             </section>
         </section>
-        <form name="contact-form" class="vw-100 vh-100 d-flex flex-column align-items-center justify-content-center" id="contact">
+        <form name="contact-form" class="vw-100 vh-100 d-flex flex-column align-items-center justify-content-center"
+            id="contact">
 
             <h1 class="font-noto text-center fst-italic">Contact me</h1>
+
             <div class="input-field w-50">
+                <div class="alert-message alert alert-success alert-dismissible fade show d-none" role="alert">
+                    <strong>Thank you!</strong> Your message was delivered!.
+                    <button type="button" class="btn-close" data-dismiss="alert" aria-label="btn-close">
+                        <!-- <span aria-hidden="true">&times;</span> -->
+                    </button>
+                </div>
                 <div class="row mb-3">
                     <label for="inputFullname" class="col-sm-2 col-form-label">Full Name</label>
                     <div class="col-sm-10">
@@ -109,17 +119,32 @@
                 <div class="row mb-3">
                     <label for="inputMessage" class="col-sm-2 col-form-label">Message</label>
                     <div class="col-sm-10">
-                        <textarea class="form-control" rows="5" id="inputMessage" placeholder="Type message..." name="message"></textarea>
+                        <textarea class="form-control" rows="5" id="inputMessage" placeholder="Type message..."
+                            name="message"></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-10 offset-sm-2">
-                        <button type="submit" class="btn btn-primary">Send</button>
+                        <button type="submit" class="send-btn btn btn-primary">Send</button>
+                        <button class="loading-btn btn btn-primary d-none" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Loading...
+                        </button>
                     </div>
                 </div>
             </div>
         </form>
-        <footer></footer>
+        <footer class="vw-100 bg-dark d-flex flex-column align-items-center pt-5">
+            <div class="footer-top  w-50 pb-5">
+                <h1 class="font-noto fst-italic text-center text-light">Shutter</h1>
+                <p class="text-white-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam at, veniam
+                    voluptatem, expedita cum cupiditate beatae nihil ab quae magni corrupti reprehenderit! Nemo cumque
+                    voluptatem eos inventore perferendis quaerat consequuntur!</p>
+            </div>
+            <div class="footer-bottom py-3">
+                <p class="text-light">Copyright &#169; Shutter.</p>
+            </div>
+        </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

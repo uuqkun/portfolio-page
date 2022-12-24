@@ -10,6 +10,10 @@
     line-height: 1.8rem;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* presets */
 .font-noto {
     font-family: var(--font-noto);
@@ -22,7 +26,8 @@
 /* presets ends */
 
 body {
-    min-height: 5000px;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 nav {
@@ -32,39 +37,80 @@ nav {
     z-index: 999;
 }
 
-.header-image {
-    background-color: red;
+.hero-image img {
+    background-position: center;
+    height: 100%;
+}
+
+@media (min-width: 1440px) {
+    .hero-image img {
+        width: 100%;
+    }
+
 }
 
 .hero-caption {
-    background-color: rgba(255, 255, 255, .7);
-    height: 40vh;
-    width: 50vw;
-    padding: 3rem 5rem 3rem 15rem;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    background-color: rgba(255, 255, 255, .5);
+    height: 50%;
+    width: 90%;
 }
 
 .hero-caption .hero-title {
-    font-size: 50px;
+    font-size: 40px;
+}
+
+@media (min-width: 768px) {
+    .hero-caption {
+        bottom: 0;
+        left: 0;
+        transform: translate(0, 0);
+        height: 40%;
+        max-width: 640px;
+    }
+
+    .hero-caption .hero-title {
+        font-size: 50px;
+    }
+
+
 }
 
 .about-me .large-text {
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 70vw;
+    width: 100%;
     height: 50vh;
 }
 
 .about-me .large-text .bg-text {
-    font-size: 200px;
+    font-size: 50px;
     opacity: .1;
 }
 
 .about-me .profile-card {
+    max-width: 400px;
     top: 30%;
     z-index: 2;
 }
+
+@media (min-width: 920px) {
+    .about-me .large-text {
+        top: 50%;
+    }
+
+    .about-me .large-text .bg-text {
+        font-size: 200px;
+        opacity: .1;
+    }
+}
+
 
 .about-me .profile-card::before {
     content: '';
@@ -100,11 +146,11 @@ nav {
 
 }
 
-form { 
+form {
     /* padding: 6rem 0; */
 
 }
 
-form .input-field { 
+form .input-field {
     margin: 3rem 0;
 }
