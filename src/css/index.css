@@ -129,7 +129,7 @@ nav {
 }
 
 .about-me .profile-card img { 
-    max-height: 30%;
+    max-height: 200px;
 }
 
 @media (min-width: 920px) {
