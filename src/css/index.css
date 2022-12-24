@@ -139,17 +139,21 @@ nav {
 }
 
 .about-me .profile-card img { 
-    max-height: 300px;
+    max-height: 200px;
 }
 
 @media (min-width: 920px) {
     .about-me .large-text {
         top: 50%;
     }
-
+    
     .about-me .large-text .bg-text {
         font-size: 200px;
         opacity: .1;
+    }
+
+    .about-me .profile-card img { 
+        max-height: 300px;
     }
 }
 
