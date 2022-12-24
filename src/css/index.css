@@ -204,3 +204,8 @@ form {
 form .input-field {
     margin: 3rem 0;
 }
+
+form input::placeholder { 
+    font-size: 10px;
+    opacity: .8;
+}
