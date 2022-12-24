@@ -208,5 +208,4 @@ form .input-field {
 form input::placeholder, 
 form textarea::placeholder { 
     font-size: 10px;
-    opacity: .8;
 }
